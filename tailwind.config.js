@@ -1,0 +1,70 @@
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}'
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary':                    '#a3a6ff',
+        'on-primary':                 '#0f00a4',
+        'primary-container':          '#9396ff',
+        'primary-dim':                '#6063ee',
+        'secondary':                  '#bff365',
+        'on-secondary':               '#3d5a00',
+        'secondary-container':        '#476800',
+        'secondary-dim':              '#b2e558',
+        'tertiary':                   '#ffb148',
+        'on-tertiary':                '#573500',
+        'tertiary-container':         '#f8a010',
+        'tertiary-dim':               '#e79400',
+        'surface':                    '#0e0e0e',
+        'surface-dim':                '#0e0e0e',
+        'surface-bright':             '#2c2c2c',
+        'surface-container-lowest':   '#000000',
+        'surface-container-low':      '#131313',
+        'surface-container':          '#1a1919',
+        'surface-container-high':     '#201f1f',
+        'surface-container-highest':  '#262626',
+        'surface-variant':            '#262626',
+        'on-surface':                 '#ffffff',
+        'on-surface-variant':         '#adaaaa',
+        'outline':                    '#777575',
+        'outline-variant':            '#494847',
+        'background':                 '#0e0e0e',
+        'on-background':              '#ffffff',
+        'error':                      '#ff6e84',
+        'error-dim':                  '#d73357',
+        'error-container':            '#a70138',
+        'on-error':                   '#490013',
+        'inverse-surface':            '#fcf8f8',
+        'inverse-on-surface':         '#565554',
+        'inverse-primary':            '#494bd7',
+        'surface-tint':               '#a3a6ff',
+      },
+      fontFamily: {
+        headline: ['Space Grotesk', 'sans-serif'],
+        body:     ['Manrope', 'sans-serif'],
+        label:    ['Inter', 'sans-serif'],
+        sans:     ['Manrope', 'Inter', 'sans-serif'],
+        mono:     ['JetBrains Mono', 'monospace'],
+      },
+      borderRadius: {
+        DEFAULT: '0.125rem',
+        lg:      '0.25rem',
+        xl:      '0.5rem',
+        full:    '0.75rem',
+      },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+      backgroundImage: {
+        'gradient-brand': 'linear-gradient(to right, #bff365, #ffb148)',
+      },
+    },
+  },
+  plugins: [],
+}
