@@ -11,12 +11,12 @@ export function LandingPage({ onEnter }: { onEnter: () => void }) {
         <nav className="flex justify-between items-center h-16 md:h-20 px-6 md:px-8 max-w-[1440px] mx-auto">
           <div className="text-xl md:text-2xl font-black tracking-tighter text-white uppercase font-headline">PROMPTIFY</div>
           <div className="hidden md:flex items-center space-x-8 font-headline font-bold tracking-tight text-sm">
-            <button className="text-primary border-b-2 border-primary pb-0.5">Laboratory</button>
-            <button className="text-on-surface-variant hover:text-white transition-colors">Frameworks</button>
-            <button className="text-on-surface-variant hover:text-white transition-colors">Integrations</button>
+            <a href="#laboratory" className="text-primary border-b-2 border-primary pb-0.5">Laboratory</a>
+            <a href="#features" className="text-on-surface-variant hover:text-white transition-colors">Features</a>
+            <a href="#waitlist" className="text-on-surface-variant hover:text-white transition-colors">Join Waitlist</a>
           </div>
           <div className="flex items-center space-x-3 md:space-x-6">
-            <button className="hidden md:block text-on-surface-variant font-headline font-bold hover:text-white transition-all text-sm">Login</button>
+            <button onClick={onEnter} className="hidden md:block text-on-surface-variant font-headline font-bold hover:text-white transition-all text-sm">Login</button>
             <button
               onClick={onEnter}
               className="bg-primary text-on-primary px-4 py-2 md:px-6 md:py-2.5 font-headline font-black text-xs md:text-sm tracking-tight hover:brightness-110 active:scale-95 transition-all"
@@ -135,7 +135,7 @@ export function LandingPage({ onEnter }: { onEnter: () => void }) {
       </section>
 
       {/* ── FEATURE BENTO GRID ────────────────────────────── */}
-      <section className="py-20 md:py-32 px-6 md:px-8 max-w-[1440px] mx-auto relative z-10">
+      <section id="features" className="py-20 md:py-32 px-6 md:px-8 max-w-[1440px] mx-auto relative z-10">
         <div className="grid md:grid-cols-3 gap-4 md:gap-6">
           {/* Framework Builder — 2 col */}
           <div className="md:col-span-2 group bg-surface-container-low border border-white/5 p-8 md:p-10 flex flex-col justify-between min-h-[320px] md:min-h-[400px] relative overflow-hidden hover:border-primary/50 transition-colors duration-500">
@@ -238,7 +238,7 @@ export function LandingPage({ onEnter }: { onEnter: () => void }) {
       </section>
 
       {/* ── WAITLIST CTA ──────────────────────────────────── */}
-      <section className="py-20 md:py-32 px-6 md:px-8 bg-surface-container-lowest relative z-10">
+      <section id="waitlist" className="py-20 md:py-32 px-6 md:px-8 bg-surface-container-lowest relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 md:space-y-12">
           <h2 className="font-headline text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter text-white">SECURE YOUR ACCESS</h2>
           <p className="text-on-surface-variant text-base md:text-xl max-w-xl mx-auto font-light leading-relaxed">

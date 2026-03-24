@@ -6,6 +6,7 @@ import {
   CodeIcon,
   ImageIcon,
   BookOpenIcon,
+  WandIcon,
   ZapIcon,
   TargetIcon,
   LightbulbIcon,
